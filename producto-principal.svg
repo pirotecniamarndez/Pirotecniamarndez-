@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <rect width="400" height="400" fill="#0B0B0D"/>
+  <circle cx="200" cy="200" r="80" stroke="#E3A73E" stroke-width="2" opacity="0.4"/>
+  <circle cx="200" cy="200" r="40" stroke="#E3A73E" stroke-width="1.5" opacity="0.6"/>
+  <circle cx="200" cy="200" r="12" fill="#E3A73E"/>
+  <g stroke="#E3A73E" stroke-width="1.5" stroke-linecap="round" opacity="0.7">
+    <line x1="200" y1="60" x2="200" y2="100"/>
+    <line x1="200" y1="300" x2="200" y2="340"/>
+    <line x1="60" y1="200" x2="100" y2="200"/>
+    <line x1="300" y1="200" x2="340" y2="200"/>
+    <line x1="100" y1="100" x2="130" y2="130"/>
+    <line x1="270" y1="270" x2="300" y2="300"/>
+    <line x1="300" y1="100" x2="270" y2="130"/>
+    <line x1="130" y1="270" x2="100" y2="300"/>
+  </g>
+  <text x="200" y="370" text-anchor="middle" fill="#ADAAA2" font-family="sans-serif" font-size="14">Producto principal</text>
+</svg>
