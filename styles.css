@@ -186,16 +186,15 @@ h1,h2,h3,h4,p,figure{ margin: 0; }
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1.15rem;
-  letter-spacing: 0.01em;
 }
-.brand__mark{
-  width: 30px; height: 30px;
-  flex-shrink: 0;
+.brand__logo{
+  height: 52px;
+  width: auto;
+  display: block;
 }
-.brand__name b{ color: var(--ember-dark); font-weight: 700; }
+@media (max-width: 600px){
+  .brand__logo{ height: 42px; }
+}
 
 .nav{
   display: flex;
@@ -403,6 +402,9 @@ h1,h2,h3,h4,p,figure{ margin: 0; }
   border-top: var(--border);
   border-left: var(--border);
 }
+.benefits--compact{
+  grid-template-columns: repeat(4, 1fr);
+}
 .benefit{
   padding: var(--space-l) var(--space-m);
   border-right: var(--border);
@@ -420,9 +422,11 @@ h1,h2,h3,h4,p,figure{ margin: 0; }
 
 @media (max-width: 900px){
   .benefits{ grid-template-columns: repeat(2, 1fr); }
+  .benefits--compact{ grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 560px){
   .benefits{ grid-template-columns: 1fr; }
+  .benefits--compact{ grid-template-columns: 1fr; }
 }
 
 /* ---------- 7. Características ---------- */
@@ -581,12 +585,48 @@ h1,h2,h3,h4,p,figure{ margin: 0; }
   border-radius: 2px;
 }
 .package h3{ font-family: var(--font-display); font-size: var(--step-1); }
+.package__price{
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  font-weight: 700;
+  color: var(--ember-dark);
+  margin: 0;
+  flex-grow: 0;
+}
+.package__price span{ font-size: var(--step--1); font-weight: 600; color: var(--ash); }
+.package--highlight .package__price{ color: var(--ember); }
+.package--highlight .package__price span{ color: #ADAAA2; }
 .package p{ font-size: var(--step--1); color: var(--ash); flex-grow: 1; }
 .package--highlight p{ color: #D8D5CD; }
 .package .btn{ align-self: flex-start; }
 
+.package-custom{
+  margin-top: var(--space-l);
+  border: var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-l);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-m);
+  flex-wrap: wrap;
+  background: var(--paper);
+}
+.package-custom h3{
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  margin-bottom: 0.35rem;
+}
+.package-custom p{
+  font-size: var(--step--1);
+  color: var(--ash);
+  margin: 0;
+  max-width: 42ch;
+}
+
 @media (max-width: 900px){
   .packages{ grid-template-columns: 1fr; }
+  .package-custom{ flex-direction: column; align-items: flex-start; }
 }
 
 /* ---------- 11. Confianza ---------- */

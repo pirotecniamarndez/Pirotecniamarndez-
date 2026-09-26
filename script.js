@@ -16,16 +16,16 @@ const CONFIG = {
   // Mensajes personalizados por sección (opcional). Si una clave no existe,
   // se usa defaultMessage.
   messagesByContext: {
-    "header":        "Hola, vi su página web y me gustaría recibir más información.",
-    "hero":          "Hola, vi su página web y quiero cotizar un paquete de pirotecnia.",
-    "producto":      "Hola, quiero pedir un paquete de pirotecnia. ¿Me pasan precios?",
-    "paquete-chico": "Hola, me interesa el paquete de reunión familiar. ¿Cuánto cuesta?",
-    "paquete-fiesta":"Hola, me interesa el paquete de fiesta completa. ¿Qué incluye y cuánto cuesta?",
-    "paquete-mayoreo":"Hola, quiero cotizar un pedido de mayoreo. ¿Me pasan información?",
-    "faq":           "Hola, tengo una duda antes de hacer mi pedido.",
-    "cta-final":     "Hola, quiero hacer mi pedido de pirotecnia.",
-    "footer":        "Hola, vi su página web y me gustaría recibir más información.",
-    "flotante":      "Hola, vi su página web y me gustaría recibir más información."
+    "header":              "Hola, vi su página web y me gustaría recibir más información.",
+    "hero":                "Hola, vi su página web y quiero cotizar un paquete de pirotecnia.",
+    "paquete-chispa":      "Hola, me interesa el paquete Chispa de $99. ¿Qué incluye?",
+    "paquete-favorito":      "Hola, me interesa el paquete Favorito de $349. ¿Qué incluye?",
+    "paquete-espectaculo": "Hola, me interesa el paquete Espectáculo de $999. ¿Qué incluye?",
+    "personaliza":         "Hola, quiero personalizar mi pedido / cotizar mayoreo.",
+    "faq":                 "Hola, tengo una duda antes de hacer mi pedido.",
+    "cta-final":           "Hola, quiero hacer mi pedido de pirotecnia.",
+    "footer":              "Hola, vi su página web y me gustaría recibir más información.",
+    "flotante":            "Hola, vi su página web y me gustaría recibir más información."
   }
 };
 
